@@ -1,0 +1,32 @@
+{
+  "name": "todo-stack",
+  "version": "1.0.0",
+  "description": "Workflow, Simplified!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "vite --host 0.0.0.0",
+    "build" : "vite build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Anas-Dew/todo-stack.git"
+  },
+  "keywords": [
+    "chrome-extension",
+    "todo-app",
+    "task-manager"
+  ],
+  "author": "Anas Raza",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Anas-Dew/todo-stack/issues"
+  },
+  "homepage": "https://github.com/Anas-Dew/todo-stack#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.8",
+    "postcss": "^8.4.16",
+    "tailwindcss": "^3.1.8",
+    "vite": "^3.0.9"
+  }
+}
