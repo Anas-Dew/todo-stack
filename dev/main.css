@@ -1,3 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.cta {
+    @apply text-[white] font-medium font-sans bg-[#c81375] rounded-[2rem] h-[3rem] w-[8rem] flex justify-center items-center hover:bg-[#a20f5f];
+}
+
+.nav {
+    @apply m-5 flex flex-row justify-between;
+}
+
+.heading {
+    @apply text-7xl flex justify-center;
+}
+
+.slogan {
+    @apply text-lg flex justify-center mt-4;
+}
+/* /////////FOR MOBILE ////////////////*/
+@media screen and (max-width: 883px){
+    .heading{
+        @apply text-4xl mt-4;
+    }
+    .slogan{
+        @apply text-xs mt-1;
+    }
+}
