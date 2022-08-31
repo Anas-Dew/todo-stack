@@ -23,7 +23,7 @@ submit.addEventListener('click', () => {
         
     } else if (validateEmail(email.value) == true) {
         //handle success
-        // push_user(email.value, name.value, box.checked); // for production only
+        push_user(email.value, name.value, box.checked); // for production only
         console.log(name.value, email.value, box.checked);
         submit.innerText = "You're invited!";
         submit.style.backgroundColor = "#34b934";
