@@ -1,6 +1,7 @@
+
 // api for submitting user information to database.
 async function push_user(email, name, box) {
-    let response = await fetch(`${process.env.API_URL}`);
+    let response = await fetch(`${API_URL}`);
     let data = await response.text()
     return data
 };
