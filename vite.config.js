@@ -9,12 +9,9 @@ module.exports = defineConfig({
       input: {
         main: resolve(__dirname, 'index.html'),
       }
-    }
+    },
+    plugins: [
+      EnvironmentPlugin(['API_URL']),
+    ],
   }
-})
-
-export default defineConfig({
-  plugins: [
-    EnvironmentPlugin(['API_URL']),
-  ],
 })
