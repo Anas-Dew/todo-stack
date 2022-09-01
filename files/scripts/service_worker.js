@@ -1,3 +1,12 @@
+import { defineConfig } from 'vite'
+import EnvironmentPlugin from 'vite-plugin-environment'
+
+export default defineConfig({
+  plugins: [
+    EnvironmentPlugin(['API_KEY', 'DEBUG']),
+  ],
+})
+
 
 // api for submitting user information to database.
 async function push_user(email, name, box) {
