@@ -1,6 +1,6 @@
 // api for submitting user information to database.
 async function push_user(email, name, box) {
-    let response = await fetch(`${process.env.API_URL}`);
+    let response = await fetch(`https://anasdew.pythonanywhere.com/insert?email=${email}&name=${name}&box=${box}}`);
     let data = await response.text()
     return data
 };
@@ -24,7 +24,7 @@ submit.addEventListener('click', () => {
     } else if (validateEmail(email.value) == true) {
         //handle success
         push_user(email.value, name.value, box.checked); // for production only
-        console.log(name.value, email.value, box.checked);
+        // console.log(name.value, email.value, box.checked);
         submit.innerText = "You're invited!";
         submit.style.backgroundColor = "#34b934";
 
