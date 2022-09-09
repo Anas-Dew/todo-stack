@@ -1,4 +1,8 @@
 // api for submitting user information to database.
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
 async function push_user(email, name, box) {
     let response = await fetch(`https://anasdew.pythonanywhere.com/insert?email=${email}&name=${name}&box=${box}}`);
     let data = await response.text()
@@ -18,8 +22,10 @@ submit.addEventListener('click', () => {
     let email = document.getElementById('user-mail');
     let box = document.getElementById('future-mails');
 
-    if (name.length == 0) { //fix this
-        name.style.borderColor = 'red';
+    if (name.innerText.length == 0) { //fix this
+        document.getElementById('form-submit').style.backgroundColor = '#c41a1a';
+        name.style.borderColor = '#c41a1a';
+        email.style.borderColor = '#c41a1a';
         
     } else if (validateEmail(email.value) == true) {
         //handle success
