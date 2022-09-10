@@ -4,5 +4,10 @@ const to_form = document.getElementById('cta').addEventListener('click', () => {
 })
 
 const show_video = document.getElementById('clicktutorial').addEventListener('click', ()=>{
-    document.getElementById('harrybhai').style.display = 'block';
+    let vid = document.getElementById('harrybhai');
+    if (vid.style.display == 'none') {
+        vid.style.display = 'block';
+    } else {
+        vid.style.display = 'none';
+    }
 })
