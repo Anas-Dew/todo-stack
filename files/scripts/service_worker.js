@@ -22,12 +22,12 @@ submit.addEventListener('click', () => {
     let email = document.getElementById('user-mail');
     let box = document.getElementById('future-mails');
 
-    if (name.innerText.length == 0) { //fix this
-        document.getElementById('form-submit').style.backgroundColor = '#c41a1a';
-        name.style.borderColor = '#c41a1a';
-        email.style.borderColor = '#c41a1a';
+    // if (name.innerText.length == 0) { //fix this
+    //     document.getElementById('form-submit').style.backgroundColor = '#c41a1a';
+    //     name.style.borderColor = '#c41a1a';
+    //     email.style.borderColor = '#c41a1a';
         
-    } else if (validateEmail(email.value) == true) {
+    if (validateEmail(email.value) == true) {
         //handle success
         push_user(email.value, name.value, box.checked); // for production only
         // console.log(name.value, email.value, box.checked);
