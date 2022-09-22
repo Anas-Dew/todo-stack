@@ -1,6 +1,6 @@
 // for 'try for free' btn
 const to_form = document.getElementById('cta').addEventListener('click', () => {
-    window.scrollTo({top:700, behavior: "smooth"});
+    window.scrollTo({top:1300, behavior: "smooth"});
 })
 
 const show_video = document.getElementById('clicktutorial').addEventListener('click', ()=>{

@@ -2,6 +2,15 @@
 <html lang="en">
 
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-63GE1RRT65"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-63GE1RRT65');
+    </script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,8 +20,27 @@
     <meta name="msvalidate.01" content="64E9481CE30624D5AC97F9CB851AB929" />
     <script type="module" src="files/scripts/service_worker.js" defer></script>
     <script type="module" src="files/scripts/window.js" defer></script>
+    <!-- Primary Meta Tags -->
     <title>Most Productive Todo for Everybody | Todo List | Todo Stack</title>
-    <meta name="description" content="The simplest & most productive todo app for everybody. Even your grandma can use it.">
+    <meta name="title" content="Most Productive Todo for Everybody | Todo List | Todo Stack">
+    <meta name="description"
+        content="The simplest & most productive todo app for everybody. Even your grandma can use it.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://todostack.vercel.app/">
+    <meta property="og:title" content="Most Productive Todo for Everybody | Todo List | Todo Stack">
+    <meta property="og:description"
+        content="The simplest & most productive todo app for everybody. Even your grandma can use it.">
+    <meta property="og:image" content="files/images/seo-banner">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://todostack.vercel.app/">
+    <meta property="twitter:title" content="Most Productive Todo for Everybody | Todo List | Todo Stack">
+    <meta property="twitter:description"
+        content="The simplest & most productive todo app for everybody. Even your grandma can use it.">
+    <meta property="twitter:image" content="files/images/seo-banner">
     <meta name="keywords" content="todoist, to do app, todo chrome extension, todo stack">
 </head>
 
@@ -29,11 +57,11 @@
         <source src="files/video/todo-stack-animation.mp4" type="video/mp4">
     </video>
 
-    <video data-aos="zoom-out-up" id="so-easy-video" playsinline autoplay muted loop draggable="false">
+    <video data-aos="zoom-out-up" id="so-easy-video" playsinline autoplay muted loop draggable="false" poster="files/images/so-easy.jpg">
         <source src="files/video/so-easy.mp4" type="video/mp4">
     </video>
 
-    
+
     <!-- form content here -->
     <div class="flex flex-col block p-6 rounded-lg shadow-lg bg-white max-w-sm flex self-center mt-10 mb-[4rem]">
         <div class="z-10 form-group mb-6">
@@ -46,21 +74,27 @@
                 class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
                 id="user-mail" placeholder="Email address">
         </div>
-        
+
         <div class="form-group form-check text-center mb-6">
             <input type="checkbox" class="form-check" id="future-mails" checked>
-            <label class="form-check-label inline-block text-gray-800" for="future-mails"><abbr title="Receive mail about other products and services in future. We promise not to spam.">Receive
+            <label class="form-check-label inline-block text-gray-800" for="future-mails"><abbr
+                    title="Receive mail about other products and services in future. We promise not to spam.">Receive
                     occasional mails</abbr></label>
         </div>
-        <button  id="form-submit" class="form-botton">Get special invitation</button>
+        <button id="form-submit" class="form-botton">Get special invitation</button>
 
     </div>
-    <h3 id="clicktutorial" style="cursor: pointer;" class="z-10 flex justify-center text-2xl underline text-blue-700">See how it works.</h3>
-    <video style="display: none;" data-aos="zoom-out-up" id="harrybhai" playsinline autoplay muted loop draggable="false">
+    <h3 id="clicktutorial" style="cursor: pointer;" class="z-10 flex justify-center text-2xl underline text-blue-700">
+        See how it works.</h3>
+    <video style="display: none;" data-aos="zoom-out-up" id="harrybhai" playsinline autoplay muted loop
+        draggable="false">
         <source src="files/video/todo promo.mp4" type="video/mp4">
     </video>
-    <a id="knowmore" style="cursor: pointer;" class="z-10 mt-3 flex justify-center text-2xl underline text-blue-700" target="_blank" href="https://medium.com/@anasdew/im-building-the-most-productive-tool-part-0-1adcb46e5abb?source=user_profile---------2----------------------------">Read more ↗</a>
-    
+    <a id="knowmore" style="cursor: pointer;" class="z-10 mt-3 flex justify-center text-2xl underline text-blue-700"
+        target="_blank"
+        href="https://medium.com/@anasdew/im-building-the-most-productive-tool-part-0-1adcb46e5abb?source=user_profile---------2----------------------------">Read
+        more ↗</a>
+
 
     <!-- <div class="flex justify-center">
         Pre-registrations starts soon
