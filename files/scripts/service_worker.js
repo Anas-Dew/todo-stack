@@ -31,7 +31,7 @@ submit.addEventListener('click', () => {
         //handle success
         push_user(email.value, name.value, box.checked); // for production only
         // console.log(name.value, email.value, box.checked);
-        submit.innerText = "You're invited!";
+        submit.innerText = "Awesome!";
         submit.style.backgroundColor = "#34b934";
 
     } else {
