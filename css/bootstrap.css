@@ -5086,8 +5086,8 @@ footer a {
 
 /*Gradients*/
 .bg-gradient {
-  background: linear-gradient(#ffff00, #ffff4d); }
-
+  background-color: #FDE047;
+}
 /*Code Window*/
 .code-window {
   border-radius: .45rem;
