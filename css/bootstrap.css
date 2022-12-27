@@ -5255,3 +5255,12 @@ pre[class*="language-"].line-numbers > code {
 #verse {
   cursor: url('../files/images/effect.png'), auto;
 }
+
+#laptop-image {
+  overflow: auto;
+}
+
+
+#laptop-image:hover {
+  scale: 2.0;
+}
