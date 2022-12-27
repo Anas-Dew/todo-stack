@@ -5251,3 +5251,7 @@ pre[class*="language-"].line-numbers > code {
   display: block;
   padding-right: 0.8em;
   text-align: right; }
+
+#verse {
+  cursor: url('../files/images/effect.png'), auto;
+}
