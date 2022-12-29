@@ -5258,6 +5258,7 @@ pre[class*="language-"].line-numbers > code {
 
 #laptop-image {
   overflow: auto;
+  width: inherit;
 }
 
 
